@@ -29,7 +29,7 @@ public class Shower : MonoBehaviour
          isShowering = true;
          _spriteColor.a = 0f;
          _spriteRenderer.color = _spriteColor;
-         GetComponent<PlayerController>().enabled = false;
+         GetComponent<InteractPlayerController>().enabled = false;
          StartCoroutine(Timer());
     }
     IEnumerator Timer()
@@ -38,6 +38,6 @@ public class Shower : MonoBehaviour
         _spriteColor.a = 1;
         _spriteRenderer.color = _spriteColor;
         StopCoroutine("Timer");
-        GetComponent<PlayerController>().enabled = true;
+        GetComponent<InteractPlayerController>().enabled = true;
     }
 }
