@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject pressEToInteract;
     private GameObject nearestInteractive;
-    // private Interaction interaction;
+    private Interaction interaction;
 
     void Start()
     {
@@ -24,8 +24,8 @@ public class PlayerController : MonoBehaviour
         if (!Input.GetKeyDown(KeyCode.E)) return;
         if (nearestInteractive != null)
         {
-            nearestInteractive.GetComponent<ComputerTurningOn>().ChangeState();
-            // interaction.Interacte();
+            interaction = nearestInteractive.GetComponent<Interaction>();
+            interaction.Interact();
         }
     }
     
@@ -54,9 +54,9 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.sprite = directions[0]; // Down
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.name == "Рабочее место")
+        if (other.gameObject.CompareTag("Interactive"))
         {
             nearestInteractive = other.gameObject;
             pressEToInteract.SetActive(true);

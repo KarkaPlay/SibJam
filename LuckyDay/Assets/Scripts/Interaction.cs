@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Sprite turnedOn, turnedOff;
+    private SpriteRenderer _spriteRenderer;
+
     void Start()
     {
-        
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Interact()
     {
-        
+        if (_spriteRenderer.sprite == turnedOff)
+        {
+            _spriteRenderer.sprite = turnedOn;
+        }
+        else
+        {
+            _spriteRenderer.sprite = turnedOff;
+        }
     }
 }
