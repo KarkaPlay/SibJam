@@ -1,27 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ComputerTurningOn : MonoBehaviour
+public class ComputerTurningOn : MonoBehaviour // переименовать в Interaction и называть так для всех предметов
 {
     public Sprite turnedOn, turnedOff;
     private SpriteRenderer _spriteRenderer;
-    
-    // Start is called before the first frame update
+
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _spriteRenderer.sprite = turnedOff;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void ChangeState()
     {
-        _spriteRenderer.sprite = _spriteRenderer.sprite == turnedOff ? turnedOn : turnedOff;
+        if (_spriteRenderer.sprite == turnedOff)
+        {
+            _spriteRenderer.sprite = turnedOn;
+            Debug.Log("комп вкл");
+        }
+        else
+        {
+            _spriteRenderer.sprite = turnedOff;
+            Debug.Log("комп выкл");
+        }
     }
 }

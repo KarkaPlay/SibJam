@@ -11,13 +11,24 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     public GameObject pressEToInteract;
-    // Start is called before the first frame update
+    private GameObject nearestInteractive;
+    // private Interaction interaction;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+    private void Update()
+    {
+        if (!Input.GetKeyDown(KeyCode.E)) return;
+        if (nearestInteractive != null)
+        {
+            nearestInteractive.GetComponent<ComputerTurningOn>().ChangeState();
+            // interaction.Interacte();
+        }
+    }
+    
     void FixedUpdate()
     {
         //if isGameActive
@@ -47,23 +58,14 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.name == "Рабочее место")
         {
+            nearestInteractive = other.gameObject;
             pressEToInteract.SetActive(true);
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.name == "Рабочее место")
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                other.gameObject.GetComponent<ComputerTurningOn>().ChangeState();
-            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         pressEToInteract.SetActive(false);
+        nearestInteractive = null;
     }
 }
