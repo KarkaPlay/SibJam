@@ -20,6 +20,7 @@
           <e p="DoorToNextScene.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
           <e p="InteractPlayerController.cs" t="Include" />
+          <e p="LayerMoving.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
         </e>
