@@ -3,13 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags:
   - Interactive
-  - Can Talk
-=======
-  tags: []
->>>>>>> parent of 316d71c (Небольшие изменения в скриптах, добавлен тэг Interactive)
+  - CanTalk
   layers:
   - Default
   - TransparentFX
