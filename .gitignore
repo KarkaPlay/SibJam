@@ -37,3 +37,4 @@ sysinfo.txt
 *.unitypackage
 *.log
 LuckyDay/UserSettings/EditorUserSettings.asset
+LuckyDay/Logs/shadercompiler-UnityShaderCompiler.exe1.log
