@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class InteractPlayerController : MonoBehaviour
 {
     public float speed;
     
@@ -61,7 +61,14 @@ public class PlayerController : MonoBehaviour
             nearestInteractive = other.gameObject;
             pressEToInteract.SetActive(true);
         }
+        if (other.gameObject.CompareTag("CanTalk"))
+        {
+            other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+            nearestInteractive = other.gameObject;
+            pressEToInteract.SetActive(true);
+        }
     }
+
 
     private void OnTriggerExit2D(Collider2D other)
     {
