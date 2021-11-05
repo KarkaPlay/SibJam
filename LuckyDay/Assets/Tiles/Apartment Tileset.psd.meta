@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: -5431338262273981867
     second: Apartment Tileset_6
+  - first:
+      213: -5023834655753772774
+    second: Apartment Tileset_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -266,6 +269,27 @@ TextureImporter:
       bones: []
       spriteID: 5520c2e70a200a4b0800000000000000
       internalID: -5431338262273981867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Apartment Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11ef7d7ff0c74ab0800000000000000
+      internalID: -5023834655753772774
       vertices: []
       indices: 
       edges: []
