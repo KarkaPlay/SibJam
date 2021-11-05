@@ -6,6 +6,8 @@ using UnityEngine;
 public class InteractPlayerController : MonoBehaviour
 {
     public float speed;
+    public float height;
+    public float bottomPoint;
     
     public Sprite[] directions;
     private SpriteRenderer spriteRenderer;
@@ -17,6 +19,8 @@ public class InteractPlayerController : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        height = spriteRenderer.sprite.rect.height;
+        height *= 0.16f;
     }
 
     private void Update()
@@ -53,7 +57,9 @@ public class InteractPlayerController : MonoBehaviour
         else if (inputX <= 0 && inputY >= 0)
             spriteRenderer.sprite = directions[0]; // Up-Left
 
-        spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
+        height = spriteRenderer.sprite.rect.height / 16;
+        bottomPoint = transform.position.y - height / 2;
+        spriteRenderer.sortingOrder = -(int)(bottomPoint * 100);
     }
 
     private void OnTriggerStay2D(Collider2D other)
