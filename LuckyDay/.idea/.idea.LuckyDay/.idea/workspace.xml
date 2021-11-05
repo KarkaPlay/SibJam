@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractPlayerController.cs" />
       </list>
     </option>
   </component>
