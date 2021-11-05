@@ -3,9 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
+  tags: []
+=======
   tags:
   - Interactive
   - CanTalk
+>>>>>>> 193fbc831fa5b1e01b2fbf52d9f4630b2ecdb1e2
   layers:
   - Default
   - TransparentFX
