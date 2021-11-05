@@ -7,6 +7,7 @@ public class Shower : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     public GameObject breakfastBurnt;
     private Color _spriteColor;
+    public bool isShowering = false;
     
     void Start()
     {
@@ -25,6 +26,7 @@ public class Shower : MonoBehaviour
     }
     void Invisible()
     {
+         isShowering = true;
          _spriteColor.a = 0f;
          _spriteRenderer.color = _spriteColor;
          GetComponent<PlayerController>().enabled = false;
