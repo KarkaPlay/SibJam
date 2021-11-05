@@ -44,14 +44,14 @@ public class InteractPlayerController : MonoBehaviour
         transform.Translate(Vector2.right * (inputX * speed * Time.fixedDeltaTime), Space.World);
         transform.Translate(Vector2.up * (inputY * speed * Time.fixedDeltaTime), Space.World);
 
-        if (inputX > 0.2)
-            spriteRenderer.sprite = directions[3]; // Right
-        else if (inputX < -0.2)
-            spriteRenderer.sprite = directions[1]; // Left
-        else if (inputY > 0.2)
-            spriteRenderer.sprite = directions[2]; // Up
-        else if (inputY < -0.2)
-            spriteRenderer.sprite = directions[0]; // Down
+        if (inputX >= 0 && inputY <= 0)
+            spriteRenderer.sprite = directions[2]; // Down-Right
+        else if (inputX >= 0 && inputY >= 0)
+            spriteRenderer.sprite = directions[3]; // Up-Right
+        else if (inputX <= 0 && inputY <= 0)
+            spriteRenderer.sprite = directions[1]; // Down-Left
+        else if (inputX <= 0 && inputY >= 0)
+            spriteRenderer.sprite = directions[0]; // Up-Left
     }
 
     private void OnTriggerStay2D(Collider2D other)
