@@ -26,6 +26,5 @@ public class DoorToNextScene : MonoBehaviour
     {
         _spriteColor.a = 0f;
         _spriteRenderer.color = _spriteColor;
-        GetComponent<InteractPlayerController>().enabled = false;
     }
 }
