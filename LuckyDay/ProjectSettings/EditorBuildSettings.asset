@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: e8ded8c11283124429e1c6fa248ca0ff
   - enabled: 1
-    path: "Assets/Scenes/\u0421\u043F\u0430\u043B\u044C\u043D\u044F/Apartment.unity"
+    path: "Assets/Scenes/\u0414\u043E\u043C/Apartment.unity"
     guid: dbad4a30616994c4ca8ff8239ee819e4
   - enabled: 1
     path: "Assets/Scenes/\u0420\u0435\u0441\u0435\u043F\u0448\u043D/Hall.unity"
@@ -21,4 +21,11 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\u0421\u043A\u043B\u0430\u0434/Warehouse.unity"
     guid: 1ac43e4a36e47bf448c5aa38faaed3c7
+  - enabled: 1
+    path: "Assets/Scenes/\u041A\u043E\u0440\u0438\u0434\u043E\u0440/Corridor.unity"
+    guid: 0d38391800eeda34e8344cb9914e3376
+  - enabled: 1
+    path: "Assets/Scenes/\u0421\u0435\u0440\u0432\u0435\u0440\u043D\u0430\u044F/Servers
+      room.unity"
+    guid: b072385706701a647841052aab8f9d6a
   m_configObjects: {}

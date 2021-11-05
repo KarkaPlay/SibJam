@@ -1777,6 +1777,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3836520131595068015, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3836520131595068015, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 6563471289637120285, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: m_Name
       value: Player
