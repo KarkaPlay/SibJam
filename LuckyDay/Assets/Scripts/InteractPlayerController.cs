@@ -48,14 +48,40 @@ public class InteractPlayerController : MonoBehaviour
         transform.Translate(Vector2.right * (inputX * speed * Time.fixedDeltaTime), Space.World);
         transform.Translate(Vector2.up * (inputY * speed * Time.fixedDeltaTime), Space.World);
 
-        if (inputX >= 0 && inputY <= 0)
+        if (inputY > 0)
+        {
+            if (inputX > 0)
+            {
+                spriteRenderer.sprite = directions[3]; // Up-Right
+            }
+
+            if (inputX < 0)
+            {
+                spriteRenderer.sprite = directions[0]; // Up-Left
+            }
+        }
+
+        else
+        {
+            if (inputX > 0)
+            {
+                spriteRenderer.sprite = directions[2]; // Down-Right
+            }
+
+            if (inputX < 0)
+            {
+                spriteRenderer.sprite = directions[1]; // Down-Left
+            }
+        }
+
+        /*if (inputX > 0.0f && inputY < 0.0f)
             spriteRenderer.sprite = directions[2]; // Down-Right
-        else if (inputX >= 0 && inputY >= 0)
-            spriteRenderer.sprite = directions[3]; // Up-Right
-        else if (inputX <= 0 && inputY <= 0)
+        if (inputX < 0.0f && inputY < 0.0f)
             spriteRenderer.sprite = directions[1]; // Down-Left
-        else if (inputX <= 0 && inputY >= 0)
-            spriteRenderer.sprite = directions[0]; // Up-Left
+        if (inputX > 0.0f && inputY > 0.0f)
+            spriteRenderer.sprite = directions[3]; // Up-Right
+        if (inputX < 0.0f && inputY > 0.0f)
+            spriteRenderer.sprite = directions[0]; // Up-Left*/
 
         height = spriteRenderer.sprite.rect.height / 16;
         bottomPoint = transform.position.y - height / 2;

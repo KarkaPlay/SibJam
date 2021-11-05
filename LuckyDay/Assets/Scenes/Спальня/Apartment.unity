@@ -344,6 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!212 &225633850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -504,6 +506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!1 &272075383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,6 +1545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3897,6 +3903,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!114 &807049728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4170,6 +4178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!1 &967754282
 GameObject:
   m_ObjectHideFlags: 0
@@ -4363,6 +4373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!212 &1123538217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4568,6 +4580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!61 &1190194866
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7948,6 +7962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!1 &1470665506
 GameObject:
   m_ObjectHideFlags: 0
@@ -8261,6 +8277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!212 &1581539723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8356,6 +8374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!212 &1617347780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8736,6 +8756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c009f4cdc4252fa4187bd441acc59b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 0
+  bottomPoint: 0
 --- !u!213 &1982014018
 Sprite:
   m_ObjectHideFlags: 0
