@@ -52,6 +52,8 @@ public class InteractPlayerController : MonoBehaviour
             spriteRenderer.sprite = directions[1]; // Down-Left
         else if (inputX <= 0 && inputY >= 0)
             spriteRenderer.sprite = directions[0]; // Up-Left
+
+        spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -68,8 +70,7 @@ public class InteractPlayerController : MonoBehaviour
             pressEToInteract.SetActive(true);
         }
     }
-
-
+    
     private void OnTriggerExit2D(Collider2D other)
     {
         pressEToInteract.SetActive(false);
