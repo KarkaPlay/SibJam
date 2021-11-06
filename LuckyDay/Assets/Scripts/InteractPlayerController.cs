@@ -15,6 +15,7 @@ public class InteractPlayerController : MonoBehaviour
     public GameObject pressEToInteract;
     private GameObject nearestInteractive;
     private Interaction interaction;
+    private PlitaInteraction plita;
 
     void Start()
     {
@@ -28,8 +29,16 @@ public class InteractPlayerController : MonoBehaviour
         if (!Input.GetKeyDown(KeyCode.E)) return;
         if (nearestInteractive != null)
         {
-            interaction = nearestInteractive.GetComponent<Interaction>();
-            interaction.Interact();
+            if (nearestInteractive.name == "плита") /*ебаная*/
+            {
+                plita = nearestInteractive.GetComponent<PlitaInteraction>();
+                plita.Interact();
+            }
+            else
+            {
+                interaction = nearestInteractive.GetComponent<Interaction>();
+                interaction.Interact();
+            }
         }
     }
     

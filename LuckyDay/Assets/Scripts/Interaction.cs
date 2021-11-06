@@ -6,7 +6,7 @@ public class Interaction : MonoBehaviour
 {
     public Sprite turnedOn, turnedOff;
     private SpriteRenderer _spriteRenderer;
-    public int counter;
+    
 
     void Start()
     {
@@ -18,7 +18,6 @@ public class Interaction : MonoBehaviour
     {
         if (_spriteRenderer.sprite == turnedOff)
         {
-             counter++;
             _spriteRenderer.sprite = turnedOn;
         }
         else
