@@ -108,6 +108,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 36b63bcf67fb04448a050f70c3bd1d44, type: 3}
   - {fileID: 21300000, guid: dd9e9db7af7254c449c1c66bec027549, type: 3}
   pressEToInteract: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!61 &3836520131595068015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,13 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784636b4d526d8a4c902a980dfd3aece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  directions:
-  - {fileID: 21300000, guid: 3df1c9fe1a41eb64c9a28b254e1994f9, type: 3}
-  - {fileID: 21300000, guid: a779d9ecbf6c26a44a99d2f39b92f0e3, type: 3}
-  - {fileID: 21300000, guid: dd9e9db7af7254c449c1c66bec027549, type: 3}
-  - {fileID: 21300000, guid: 36b63bcf67fb04448a050f70c3bd1d44, type: 3}
   pressEToInteract: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &4159898249587181304
 MonoBehaviour:
   m_ObjectHideFlags: 0
