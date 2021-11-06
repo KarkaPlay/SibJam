@@ -15,15 +15,12 @@ public class BreakfastBurnt : MonoBehaviour
     }
     public void IsBurned()
     {
-        if (interaction.counter < 5 && interaction.turnedOn == null)
+        if (interaction.counter < 5 && interaction.turnedOff != null)
         _spriteRenderer.sprite = burnt;
     }
     public IEnumerator BurnTimer()
     {
-        if (interaction.turnedOn == null)
-        interaction.turnedOn = burnt;
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds(3);
         IsBurned();
-        interaction.turnedOff = null;
     }
 }

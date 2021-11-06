@@ -1909,6 +1909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   burnt: {fileID: 21300000, guid: e14477816cd025342b5977ebc38cafe9, type: 3}
   player: {fileID: 226727778}
+  interaction: {fileID: 0}
 --- !u!61 &472280926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1947,8 +1948,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f51f25cdc05df04eae9f384635f4140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnedOn: {fileID: 0}
-  turnedOff: {fileID: 21300000, guid: a76fd0fe93f40374fa3f444223a59ecd, type: 3}
+  turnedOn: {fileID: 21300000, guid: a76fd0fe93f40374fa3f444223a59ecd, type: 3}
+  turnedOff: {fileID: 0}
+  counter: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,7 +1987,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4133,9 +4135,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041D\u0430\u0436\u043C\u0438         \u0447\u0442\u043E\u0431\u044B\n\u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C"
+  m_text: "\u041D\u0430\u0436\u043C\u0438     \u0447\u0442\u043E\u0431\u044B    
+    \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d6fde2ac0efbdee41987aa4bc976e501, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4199,7 +4202,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -169.7507, w: -44.099655}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &603573621
@@ -4935,6 +4938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: {fileID: 21300000, guid: 1fa4114267e0e79409ee5ff7fe7ae68a, type: 3}
   turnedOff: {fileID: 21300000, guid: b1c8881c5a3b2854da8dff19c5234661, type: 3}
+  counter: 0
 --- !u!1 &1123538215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8419,6 +8423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: {fileID: 21300000, guid: 5dc7e699e60daaf4db14b5a820bb118d, type: 3}
   turnedOff: {fileID: 21300000, guid: eb078815250c4084b8b85479704a01f7, type: 3}
+  counter: 0
 --- !u!212 &1307814013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8993,6 +8998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: {fileID: 21300000, guid: c4505ec49ae2f2a49abc93a8beae3ffe, type: 3}
   turnedOff: {fileID: 21300000, guid: d9d2236f1111bbd469445d09eea6f409, type: 3}
+  counter: 0
 --- !u!212 &1579268816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9392,6 +9398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: {fileID: 21300000, guid: 781e9e1a3507e5c47a8e5aebb6d2bffc, type: 3}
   turnedOff: {fileID: 21300000, guid: 732c14795ea1e824c97d44025489819f, type: 3}
+  counter: 0
 --- !u!212 &1684765689
 SpriteRenderer:
   m_ObjectHideFlags: 0
