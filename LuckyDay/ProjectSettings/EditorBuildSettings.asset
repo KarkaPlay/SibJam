@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: e8ded8c11283124429e1c6fa248ca0ff
   - enabled: 1
-    path: "Assets/Scenes/\u0414\u043E\u043C/Apartment.unity"
+    path: "Assets/Scenes/\u0421\u043F\u0430\u043B\u044C\u043D\u044F/Apartment.unity"
     guid: dbad4a30616994c4ca8ff8239ee819e4
   - enabled: 1
     path: "Assets/Scenes/\u0420\u0435\u0441\u0435\u043F\u0448\u043D/Hall.unity"

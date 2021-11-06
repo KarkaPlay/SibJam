@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 8209945000499861787}
   - component: {fileID: 6888578945773291546}
   - component: {fileID: 3836520131595068015}
-  - component: {fileID: 7685022673593135674}
   - component: {fileID: 1511802559}
-  - component: {fileID: 1511802556}
-  - component: {fileID: 1511802557}
+  - component: {fileID: 933472020139192266}
+  - component: {fileID: 4159898249587181304}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -133,18 +132,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4454894, y: 0.23219097}
   m_EdgeRadius: 0
---- !u!114 &7685022673593135674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6563471289637120285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb49af981a38b514c88f03841eac9318, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1511802559
 Rigidbody2D:
   serializedVersion: 4
@@ -166,7 +153,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1511802556
+--- !u!114 &933472020139192266
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,10 +162,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 6563471289637120285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb49af981a38b514c88f03841eac9318, type: 3}
+  m_Script: {fileID: 11500000, guid: 784636b4d526d8a4c902a980dfd3aece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1511802557
+  speed: 5
+  directions:
+  - {fileID: 21300000, guid: 3df1c9fe1a41eb64c9a28b254e1994f9, type: 3}
+  - {fileID: 21300000, guid: a779d9ecbf6c26a44a99d2f39b92f0e3, type: 3}
+  - {fileID: 21300000, guid: dd9e9db7af7254c449c1c66bec027549, type: 3}
+  - {fileID: 21300000, guid: 36b63bcf67fb04448a050f70c3bd1d44, type: 3}
+  pressEToInteract: {fileID: 0}
+--- !u!114 &4159898249587181304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,8 +181,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6563471289637120285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7334e00a6fe33834887f445383143b92, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f3c8702b89c507409754e6f2e9b1de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakfastBurnt: {fileID: 0}
-  isShowering: 0
+  elevatorMenuUI: {fileID: 0}
+  pressEToInteract: {fileID: 0}
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
+  choice3: {fileID: 0}
+  choice4: {fileID: 0}
