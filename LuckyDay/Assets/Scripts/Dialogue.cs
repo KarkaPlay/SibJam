@@ -6,8 +6,14 @@ using UnityEngine;
 [System.Serializable]
 public class Dialogue
 {
-    public string name;
+    [System.Serializable]
+    public struct Line
+    {
+        public string name;
+        
+        [TextArea(3, 10)]
+        public string[] text;
+    }
 
-    [TextArea(3, 10)]
-    public string[] sentences;
+    public Line[] lines;
 }
