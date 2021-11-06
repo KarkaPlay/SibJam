@@ -39,6 +39,7 @@ public class PlitaInteraction : MonoBehaviour
     
     public IEnumerator BurnTimer()
     {
+        if (transform.childCount == 0) yield break;
         yield return new WaitForSeconds(1);
         BurnSkovorodka();
     }

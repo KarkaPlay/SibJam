@@ -15,10 +15,8 @@
             <e p="DoorToCorridor.cs" t="Include" />
           </e>
           <e p="Спальня" t="Include">
-            <e p="BreakfastBurnt.cs" t="Include" />
             <e p="PlitaInteraction.cs" t="Include" />
             <e p="Shower.cs" t="Include" />
-            <e p="Skovorodka.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
