@@ -1,37 +1,49 @@
 fileFormatVersion: 2
-guid: 12b5dade00712c84194fcd081870b360
+guid: f26c6bc50ad0f1f43aec3195c28a8f56
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1552688234173299498
-    second: BossRoom Tileset_0
+      213: -5481799242133508004
+    second: Office_Tileset_0
   - first:
-      213: -4800967832557945265
-    second: BossRoom Tileset_1
+      213: -6744647639356643637
+    second: Office_Tileset_1
   - first:
-      213: -9153080662828470561
-    second: BossRoom Tileset_2
+      213: 1374082934972140058
+    second: Office_Tileset_2
   - first:
-      213: 7853813680670215067
-    second: BossRoom Tileset_3
+      213: 4776589992697597854
+    second: Office_Tileset_3
   - first:
-      213: 7610577552368717845
-    second: BossRoom Tileset_4
+      213: -252893928552614407
+    second: Office_Tileset_4
   - first:
-      213: 2794067338622581870
-    second: BossRoom Tileset_5
+      213: -5904032548009333034
+    second: Office_Tileset_5
   - first:
-      213: -8656526520428140243
-    second: BossRoom Tileset_6
+      213: -6207048349997585839
+    second: Office_Tileset_6
   - first:
-      213: 4355196492239802572
-    second: BossRoom Tileset_7
+      213: -3917477345457540526
+    second: Office_Tileset_7
   - first:
-      213: -4024386705185463459
-    second: BossRoom Tileset_8
+      213: -4799080575414048091
+    second: Office_Tileset_8
   - first:
-      213: -4326233873527291833
-    second: BossRoom Tileset_9
+      213: -8089608309843858638
+    second: Office_Tileset_9
+  - first:
+      213: -1344810520397382585
+    second: Office_Tileset_10
+  - first:
+      213: 4660366653534680029
+    second: Office_Tileset_11
+  - first:
+      213: -7151840703310695964
+    second: Office_Tileset_12
+  - first:
+      213: -3589464003946183279
+    second: Office_Tileset_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -98,7 +110,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,19 +122,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,7 +134,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -145,7 +145,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BossRoom Tileset_0
+      name: Office_Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5070a212acbce3b0800000000000000
+      internalID: -5481799242133508004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc668f8e4b23662a0800000000000000
+      internalID: -6744647639356643637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ac0fe2629b11310800000000000000
+      internalID: 1374082934972140058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f0d687a4bd94240800000000000000
+      internalID: 4776589992697597854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Tileset_4
       rect:
         serializedVersion: 2
         x: 0
@@ -159,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d40c2b074eb37ae0800000000000000
-      internalID: -1552688234173299498
+      spriteID: 9f5b4c6df4a8d7cf0800000000000000
+      internalID: -252893928552614407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossRoom Tileset_1
+      name: Office_Tileset_5
       rect:
         serializedVersion: 2
         x: 16
@@ -180,35 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4e7e4261398f5db0800000000000000
-      internalID: -4800967832557945265
+      spriteID: 6de2f81bda9a01ea0800000000000000
+      internalID: -5904032548009333034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossRoom Tileset_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdeac9bd1a9b9f080800000000000000
-      internalID: -9153080662828470561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossRoom Tileset_3
+      name: Office_Tileset_6
       rect:
         serializedVersion: 2
         x: 48
@@ -222,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9b83786ee95efc60800000000000000
-      internalID: 7853813680670215067
+      spriteID: 15a28ba79622cd9a0800000000000000
+      internalID: -6207048349997585839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossRoom Tileset_4
+      name: Office_Tileset_7
       rect:
         serializedVersion: 2
         x: 0
@@ -243,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510df7816f33e9960800000000000000
-      internalID: 7610577552368717845
+      spriteID: 252fc582c1352a9c0800000000000000
+      internalID: -3917477345457540526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossRoom Tileset_5
+      name: Office_Tileset_8
       rect:
         serializedVersion: 2
         x: 16
@@ -264,35 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6cbe1dd07586c620800000000000000
-      internalID: 2794067338622581870
+      spriteID: 5aae7fda4ad366db0800000000000000
+      internalID: -4799080575414048091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossRoom Tileset_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d29e1217ef6ddd780800000000000000
-      internalID: -8656526520428140243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossRoom Tileset_7
+      name: Office_Tileset_9
       rect:
         serializedVersion: 2
         x: 48
@@ -306,14 +348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc01bf68224c07c30800000000000000
-      internalID: 4355196492239802572
+      spriteID: 23b65bf4a10fbbf80800000000000000
+      internalID: -8089608309843858638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossRoom Tileset_8
+      name: Office_Tileset_10
       rect:
         serializedVersion: 2
         x: 0
@@ -327,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d53ad9e1d918628c0800000000000000
-      internalID: -4024386705185463459
+      spriteID: 74c7181f4f5465de0800000000000000
+      internalID: -1344810520397382585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossRoom Tileset_9
+      name: Office_Tileset_11
       rect:
         serializedVersion: 2
         x: 16
@@ -348,8 +390,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 740c421a63126f3c0800000000000000
-      internalID: -4326233873527291833
+      spriteID: dd3b20b97c2fca040800000000000000
+      internalID: 4660366653534680029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e17cfcb5ce8fbc90800000000000000
+      internalID: -7151840703310695964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1958cb69189af2ec0800000000000000
+      internalID: -3589464003946183279
       vertices: []
       indices: 
       edges: []
