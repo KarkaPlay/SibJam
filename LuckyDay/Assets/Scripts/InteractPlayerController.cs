@@ -6,6 +6,8 @@ using UnityEngine;
 public class InteractPlayerController : MonoBehaviour
 {
     public float speed;
+    public float height;
+    public float bottomPoint;
     
     public Sprite[] directions;
     private SpriteRenderer spriteRenderer;
@@ -17,6 +19,8 @@ public class InteractPlayerController : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        height = spriteRenderer.sprite.rect.height;
+        height *= 0.16f;
     }
 
     private void Update()
@@ -44,16 +48,44 @@ public class InteractPlayerController : MonoBehaviour
         transform.Translate(Vector2.right * (inputX * speed * Time.fixedDeltaTime), Space.World);
         transform.Translate(Vector2.up * (inputY * speed * Time.fixedDeltaTime), Space.World);
 
-        if (inputX >= 0 && inputY <= 0)
-            spriteRenderer.sprite = directions[2]; // Down-Right
-        else if (inputX >= 0 && inputY >= 0)
-            spriteRenderer.sprite = directions[3]; // Up-Right
-        else if (inputX <= 0 && inputY <= 0)
-            spriteRenderer.sprite = directions[1]; // Down-Left
-        else if (inputX <= 0 && inputY >= 0)
-            spriteRenderer.sprite = directions[0]; // Up-Left
+        if (inputY > 0)
+        {
+            if (inputX > 0)
+            {
+                spriteRenderer.sprite = directions[3]; // Up-Right
+            }
 
-        spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
+            if (inputX < 0)
+            {
+                spriteRenderer.sprite = directions[0]; // Up-Left
+            }
+        }
+
+        else
+        {
+            if (inputX > 0)
+            {
+                spriteRenderer.sprite = directions[2]; // Down-Right
+            }
+
+            if (inputX < 0)
+            {
+                spriteRenderer.sprite = directions[1]; // Down-Left
+            }
+        }
+
+        /*if (inputX > 0.0f && inputY < 0.0f)
+            spriteRenderer.sprite = directions[2]; // Down-Right
+        if (inputX < 0.0f && inputY < 0.0f)
+            spriteRenderer.sprite = directions[1]; // Down-Left
+        if (inputX > 0.0f && inputY > 0.0f)
+            spriteRenderer.sprite = directions[3]; // Up-Right
+        if (inputX < 0.0f && inputY > 0.0f)
+            spriteRenderer.sprite = directions[0]; // Up-Left*/
+
+        height = spriteRenderer.sprite.rect.height / 16;
+        bottomPoint = transform.position.y - height / 2;
+        spriteRenderer.sortingOrder = -(int)(bottomPoint * 100);
     }
 
     private void OnTriggerStay2D(Collider2D other)
