@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7334e00a6fe33834887f445383143b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakfastBurnt: {fileID: 472280922}
+  plita: {fileID: 788920104}
   isShowering: 0
 --- !u!114 &226727780
 MonoBehaviour:
@@ -1820,8 +1820,6 @@ GameObject:
   m_Component:
   - component: {fileID: 472280924}
   - component: {fileID: 472280923}
-  - component: {fileID: 472280925}
-  - component: {fileID: 472280927}
   - component: {fileID: 472280926}
   m_Layer: 0
   m_Name: "\u0441\u043A\u043E\u0432\u043E\u0440\u043E\u0434\u043A\u0430 \u0441 \u044F\u0438\u0447\u043D\u0438\u0446\u0435\u0439"
@@ -1895,21 +1893,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &472280925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472280922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f52d7a0eaebd257429df6e13aa9ea9ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  burnt: {fileID: 21300000, guid: e14477816cd025342b5977ebc38cafe9, type: 3}
-  player: {fileID: 226727778}
-  interaction: {fileID: 0}
 --- !u!61 &472280926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1936,21 +1919,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2951069, y: 1.152884}
   m_EdgeRadius: 0
---- !u!114 &472280927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472280922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f51f25cdc05df04eae9f384635f4140, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnedOn: {fileID: 21300000, guid: a76fd0fe93f40374fa3f444223a59ecd, type: 3}
-  turnedOff: {fileID: 0}
-  counter: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,6 +4301,7 @@ GameObject:
   - component: {fileID: 788920108}
   - component: {fileID: 788920107}
   - component: {fileID: 788920105}
+  - component: {fileID: 788920106}
   m_Layer: 0
   m_Name: "\u043F\u043B\u0438\u0442\u0430"
   m_TagString: Untagged
@@ -4366,6 +4335,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.225038, y: 0.875}
   m_EdgeRadius: 0
+--- !u!114 &788920106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788920104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f67fbc8798637b43bc6ae05e3ea0e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skovorodka: {fileID: 472280922}
+  Normal: {fileID: 21300000, guid: a76fd0fe93f40374fa3f444223a59ecd, type: 3}
+  Burned: {fileID: 21300000, guid: e14477816cd025342b5977ebc38cafe9, type: 3}
+  count: 0
 --- !u!212 &788920107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4938,7 +4923,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: {fileID: 21300000, guid: 1fa4114267e0e79409ee5ff7fe7ae68a, type: 3}
   turnedOff: {fileID: 21300000, guid: b1c8881c5a3b2854da8dff19c5234661, type: 3}
-  counter: 0
 --- !u!1 &1123538215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8423,7 +8407,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: {fileID: 21300000, guid: 5dc7e699e60daaf4db14b5a820bb118d, type: 3}
   turnedOff: {fileID: 21300000, guid: eb078815250c4084b8b85479704a01f7, type: 3}
-  counter: 0
 --- !u!212 &1307814013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8998,7 +8981,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: {fileID: 21300000, guid: c4505ec49ae2f2a49abc93a8beae3ffe, type: 3}
   turnedOff: {fileID: 21300000, guid: d9d2236f1111bbd469445d09eea6f409, type: 3}
-  counter: 0
 --- !u!212 &1579268816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9398,7 +9380,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnedOn: {fileID: 21300000, guid: 781e9e1a3507e5c47a8e5aebb6d2bffc, type: 3}
   turnedOff: {fileID: 21300000, guid: 732c14795ea1e824c97d44025489819f, type: 3}
-  counter: 0
 --- !u!212 &1684765689
 SpriteRenderer:
   m_ObjectHideFlags: 0
