@@ -24,9 +24,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/BreakfastBurnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/Skovorodka.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/PlitaInteraction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/Shower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/PlitaInteraction.cs" />
       </list>
     </option>
   </component>
