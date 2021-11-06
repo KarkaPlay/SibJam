@@ -7,19 +7,23 @@ public class BreakfastBurnt : MonoBehaviour
     public Sprite burnt;
     public GameObject player;
     private SpriteRenderer _spriteRenderer;
+    public Interaction interaction;
     void Start()
     {
+         interaction = gameObject.GetComponent<Interaction>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
     public void IsBurned()
     {
+        if (interaction.counter < 5 && interaction.turnedOn == null)
         _spriteRenderer.sprite = burnt;
-        Debug.Log("завтрак сгорел");
     }
     public IEnumerator BurnTimer()
     {
-        yield return new WaitForSeconds(3);
+        if (interaction.turnedOn == null)
+        interaction.turnedOn = burnt;
+        yield return new WaitForSeconds(0);
         IsBurned();
+        interaction.turnedOff = null;
     }
 }
