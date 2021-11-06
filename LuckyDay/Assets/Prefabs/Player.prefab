@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1511802559}
   - component: {fileID: 933472020139192266}
   - component: {fileID: 4159898249587181304}
+  - component: {fileID: -5064296922046228094}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -187,8 +188,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevatorMenuUI: {fileID: 0}
-  pressEToInteract: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   choice3: {fileID: 0}
   choice4: {fileID: 0}
+  sceneid: 0
+  scene: {fileID: 0}
+--- !u!114 &-5064296922046228094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563471289637120285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13cb68af52ffb9409ef24221c7dc846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    scenid: 0
