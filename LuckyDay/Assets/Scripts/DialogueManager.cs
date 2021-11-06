@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     private Queue<string> sentences;
+    private Queue<string> names;
 
     public Animator animator;
 
@@ -14,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        names = new Queue<string>();
     }
 
     void Update()
@@ -26,23 +29,29 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue (Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
-        nameText.text = dialogue.name;
+        nameText.text = dialogue.lines[dialogue.lines.Length-1].name;
         sentences.Clear();
-        foreach (string sentence in dialogue.sentences)
+        foreach (var line in dialogue.lines)
         {
-            sentences.Enqueue(sentence);
+            names.Enqueue(line.name);
+            foreach (string sentence in line.text)
+            {
+                sentences.Enqueue(sentence);
+            }
         }
-
         DisplayNextSentence();
     }
+    
     public void DisplayNextSentence()
     {
+        
         if (sentences.Count == 0)
         {
             EndDialogue();
             return;
         }
-
+        
+        nameText.text = names.Dequeue();
         string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
         

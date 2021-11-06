@@ -19,10 +19,14 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ComputerTurningOn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LayerMoving.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/BreakfastBurnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/Skovorodka.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/Shower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Спальня/PlitaInteraction.cs" />
       </list>
     </option>
   </component>

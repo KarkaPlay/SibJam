@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shower : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
-    public GameObject breakfastBurnt;
+    public GameObject plita;
     private Color _spriteColor;
     public bool isShowering = false;
     
@@ -17,10 +17,9 @@ public class Shower : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if  (other.gameObject.name == "ƒуш")
+        if  (other.gameObject.name == "Shower")
             {
-                StartCoroutine(breakfastBurnt.GetComponent<BreakfastBurnt>().BurnTimer());
-                Debug.Log("ƒуш");
+                StartCoroutine(plita.GetComponent<PlitaInteraction>().BurnTimer());
                 Invisible();
             }
     }
