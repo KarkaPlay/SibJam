@@ -47,6 +47,7 @@ public class Shower : MonoBehaviour
     }
     void Invisible()
     {
+         FindObjectOfType<AudioManager>().Play("Shower");
          isShowering = true;
          _spriteColor.a = 0f;
          _spriteRenderer.color = _spriteColor;
@@ -55,7 +56,7 @@ public class Shower : MonoBehaviour
     }
     IEnumerator Timer()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(9);
         _spriteColor.a = 1;
         _spriteRenderer.color = _spriteColor;
         StopCoroutine("Timer");

@@ -66,15 +66,18 @@ public class InteractPlayerController : MonoBehaviour
 
         if (inputY > 0)
         {
+            FindObjectOfType<AudioManager>().Play("Walking");
             animator.SetFloat("SpeedY", (inputY));
             if (inputX > 0)
             {
+                FindObjectOfType<AudioManager>().Play("Walking");
                 spriteRenderer.flipX = false;
                 //spriteRenderer.sprite = directions[3]; // Up-Right 
             }
 
             if (inputX < 0)
             {
+                FindObjectOfType<AudioManager>().Play("Walking");
                 spriteRenderer.flipX = true;
                 //spriteRenderer.sprite = directions[0]; // Up-Left
             }
@@ -82,6 +85,7 @@ public class InteractPlayerController : MonoBehaviour
 
         else
         {
+            FindObjectOfType<AudioManager>().Play("Walking");
             animator.SetFloat("SpeedY", (inputY));
             if (inputY < 0)
                 animator.SetBool("IsMovingDown", true);
@@ -89,17 +93,19 @@ public class InteractPlayerController : MonoBehaviour
                 animator.SetBool("IsMovingDown", false);
             if (inputX > 0)
             {
+                FindObjectOfType<AudioManager>().Play("Walking");
                 spriteRenderer.flipX = false;
                 //spriteRenderer.sprite = directions[2]; // Down-Right
             }
 
             if (inputX < 0)
             {
+                FindObjectOfType<AudioManager>().Play("Walking");
                 spriteRenderer.flipX = true;
                 //spriteRenderer.sprite = directions[1]; // Down-Left
             }
         }
-
+        
         /*if (inputX > 0.0f && inputY < 0.0f)
             spriteRenderer.sprite = directions[2]; // Down-Right
         if (inputX < 0.0f && inputY < 0.0f)
