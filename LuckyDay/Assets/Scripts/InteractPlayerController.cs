@@ -8,7 +8,7 @@ public class InteractPlayerController : MonoBehaviour
     public float speed;
     public float height;
     public float bottomPoint;
-    
+
     public Sprite[] directions;
     private SpriteRenderer spriteRenderer;
 
@@ -46,13 +46,13 @@ public class InteractPlayerController : MonoBehaviour
 
         }
     }
-    
+
     void FixedUpdate()
     {
         //if isGameActive
         MovePlayer();
     }
-    
+
     void MovePlayer()
     {
         // Перемещение
@@ -67,7 +67,7 @@ public class InteractPlayerController : MonoBehaviour
         if (inputY > 0)
         {
             animator.SetFloat("SpeedY", (inputY));
-            if (inputX > 0) 
+            if (inputX > 0)
             {
                 spriteRenderer.flipX = false;
                 //spriteRenderer.sprite = directions[3]; // Up-Right 
@@ -80,13 +80,13 @@ public class InteractPlayerController : MonoBehaviour
             }
         }
 
-        else 
+        else
         {
             animator.SetFloat("SpeedY", (inputY));
             if (inputY < 0)
-            animator.SetBool("IsMovingDown", true);
+                animator.SetBool("IsMovingDown", true);
             else
-            animator.SetBool("IsMovingDown", false);
+                animator.SetBool("IsMovingDown", false);
             if (inputX > 0)
             {
                 spriteRenderer.flipX = false;
@@ -122,7 +122,7 @@ public class InteractPlayerController : MonoBehaviour
             pressEToInteract.SetActive(true);
         }
     }
-    
+
     private void OnTriggerExit2D(Collider2D other)
     {
         pressEToInteract.SetActive(false);

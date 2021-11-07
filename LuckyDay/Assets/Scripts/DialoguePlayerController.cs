@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialoguePlayerController: MonoBehaviour
+public class DialoguePlayerController : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
 

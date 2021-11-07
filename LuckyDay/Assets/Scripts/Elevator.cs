@@ -16,11 +16,11 @@ public class Elevator : MonoBehaviour
     public GameObject choice3;
     public GameObject choice4;
 
+
     void ElevatorWindowOn()
     {
         elevatorMenuUI.SetActive(true);
         isElevatorWindowOn = true;
-        
     }
     void ElevatorWindowOff()
     {

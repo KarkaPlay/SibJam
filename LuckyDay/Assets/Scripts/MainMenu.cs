@@ -5,17 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public int scenid = 1;
-
     public void PlayGame()
     {
-        SceneManager.LoadScene(scenid);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    public void QuitGame()
-    {
-        Debug.Log("Quitting game...");
-        Application.Quit();
-    }
-
 
 }
