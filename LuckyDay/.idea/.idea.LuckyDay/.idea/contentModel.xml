@@ -20,6 +20,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
           <e p="Dialogue.cs" t="Include" />
           <e p="DialogueManager.cs" t="Include" />
           <e p="DialoguePlayerController.cs" t="Include" />
@@ -31,6 +32,8 @@
           <e p="LayerMoving.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
+          <e p="Sound.cs" t="Include" />
+          <e p="TVCast.cs" t="Include" />
           <e p="VolumeValue.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
