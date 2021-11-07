@@ -5,11 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class DoorToCorridor : MonoBehaviour
 {
+    public GameObject vPLayer;
+    private void Start()
+    {
+        vPLayer.SetActive(false);
+    }
+    //public int timeToStop;
     private void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (other.gameObject.name == "Дверь в коридор")
         {
-            SceneManager.LoadScene("Corridor");
+            vPLayer.SetActive(true);
+
         }
     }
 }

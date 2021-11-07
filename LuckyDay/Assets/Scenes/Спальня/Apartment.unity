@@ -2019,6 +2019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plita: {fileID: 0}
   isShowering: 0
+  pressEToInteract: {fileID: 0}
 --- !u!1 &1152476041
 GameObject:
   m_ObjectHideFlags: 0
