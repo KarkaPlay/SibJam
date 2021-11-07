@@ -1,29 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class DoorToNextScene : MonoBehaviour
+public class TVCast : MonoBehaviour
 {
-    private SpriteRenderer _spriteRenderer;
-    private Color _spriteColor;
+    private SpriteRenderer spriteRenderer;
 
     public GameObject pressEToInteract;
     private GameObject nearestInteractive;
+    private DialogueTrigger trigger;
+    public Interaction interaction;
+
+    public Animator animator;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     private void Update()
     {
         if (!Input.GetKeyDown(KeyCode.E)) return;
         if (nearestInteractive != null)
         {
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
-
+            trigger = nearestInteractive.GetComponent<DialogueTrigger>();
+            trigger.TriggerDialogue();
         }
     }
+
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.name == "Дверь наружу")
+        if (other.gameObject.name == "телек")
         {
             nearestInteractive = other.gameObject;
             pressEToInteract.SetActive(true);

@@ -2576,46 +2576,30 @@ PrefabInstance:
       propertyPath: pressEToInteract
       value: 
       objectReference: {fileID: 899270835}
-    - target: {fileID: 0}
+    - target: {fileID: 1024241425739819728, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: choice1
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
+      objectReference: {fileID: 548092190}
+    - target: {fileID: 1024241425739819728, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: choice2
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
+      objectReference: {fileID: 1849677448}
+    - target: {fileID: 1024241425739819728, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: choice3
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
+      objectReference: {fileID: 894985220}
+    - target: {fileID: 1024241425739819728, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: choice4
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: dialogueStart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: dialogueMenuUI
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
+      objectReference: {fileID: 2045121840}
+    - target: {fileID: 1024241425739819728, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: elevatorMenuUI
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
+      objectReference: {fileID: 1341868442}
+    - target: {fileID: 1984911266447686928, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: pressEToInteract
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 899270835}
     - target: {fileID: 6563471289637120285, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2684,7 +2668,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1984911266447686928, guid: bf48763dedd640c489d6416912706ec1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bf48763dedd640c489d6416912706ec1, type: 3}
 --- !u!114 &1012430876 stripped
 MonoBehaviour:
@@ -7584,11 +7569,10 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6563471289637120285, guid: bf48763dedd640c489d6416912706ec1, type: 3}
   m_PrefabInstance: {fileID: 947479140}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1917318160
+--- !u!114 &1917318160 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1024241425739819728, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+  m_PrefabInstance: {fileID: 947479140}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917318159}
   m_Enabled: 1
@@ -7596,11 +7580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f3c8702b89c507409754e6f2e9b1de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elevatorMenuUI: {fileID: 1341868442}
-  choice1: {fileID: 548092190}
-  choice2: {fileID: 1849677448}
-  choice3: {fileID: 894985220}
-  choice4: {fileID: 2045121840}
 --- !u!95 &1917318161
 Animator:
   serializedVersion: 3
