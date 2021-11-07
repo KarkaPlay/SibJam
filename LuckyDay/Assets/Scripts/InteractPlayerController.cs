@@ -17,12 +17,8 @@ public class InteractPlayerController : MonoBehaviour
     private Interaction interaction;
     private PlitaInteraction plita;
 
-    Vector2 movement;
-    public Animator animator;
-
     void Start()
     {
-        animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         height = spriteRenderer.sprite.rect.height;
         height *= 0.16f;
@@ -43,7 +39,6 @@ public class InteractPlayerController : MonoBehaviour
                 interaction = nearestInteractive.GetComponent<Interaction>();
                 interaction.Interact();
             }
-
         }
     }
     
@@ -59,44 +54,32 @@ public class InteractPlayerController : MonoBehaviour
         var inputX = Input.GetAxis("Horizontal");
         var inputY = Input.GetAxis("Vertical");
 
-        animator.SetFloat("SpeedX", Mathf.Abs(inputX));
-
         transform.Translate(Vector2.right * (inputX * speed * Time.fixedDeltaTime), Space.World);
         transform.Translate(Vector2.up * (inputY * speed * Time.fixedDeltaTime), Space.World);
 
         if (inputY > 0)
         {
-            animator.SetFloat("SpeedY", (inputY));
-            if (inputX > 0) 
+            if (inputX > 0)
             {
-                spriteRenderer.flipX = false;
-                //spriteRenderer.sprite = directions[3]; // Up-Right 
+                spriteRenderer.sprite = directions[3]; // Up-Right
             }
 
             if (inputX < 0)
             {
-                spriteRenderer.flipX = true;
-                //spriteRenderer.sprite = directions[0]; // Up-Left
+                spriteRenderer.sprite = directions[0]; // Up-Left
             }
         }
 
-        else 
+        else
         {
-            animator.SetFloat("SpeedY", (inputY));
-            if (inputY < 0)
-            animator.SetBool("IsMovingDown", true);
-            else
-            animator.SetBool("IsMovingDown", false);
             if (inputX > 0)
             {
-                spriteRenderer.flipX = false;
-                //spriteRenderer.sprite = directions[2]; // Down-Right
+                spriteRenderer.sprite = directions[2]; // Down-Right
             }
 
             if (inputX < 0)
             {
-                spriteRenderer.flipX = true;
-                //spriteRenderer.sprite = directions[1]; // Down-Left
+                spriteRenderer.sprite = directions[1]; // Down-Left
             }
         }
 
@@ -118,6 +101,12 @@ public class InteractPlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Interactive"))
         {
+            nearestInteractive = other.gameObject;
+            pressEToInteract.SetActive(true);
+        }
+        if (other.gameObject.CompareTag("CanTalk"))
+        {
+            other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             nearestInteractive = other.gameObject;
             pressEToInteract.SetActive(true);
         }
