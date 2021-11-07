@@ -7,7 +7,7 @@ public class DoorToServers : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Дверь в серверную")
+        if (other.gameObject.name == "Door To Servers")
         {
             SceneManager.LoadScene("Servers room");
         }

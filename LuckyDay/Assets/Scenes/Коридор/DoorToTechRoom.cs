@@ -7,9 +7,9 @@ public class DoorToTechRoom : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Дверь в комнату технарей")
+        if (other.gameObject.name == "Door To Room")
         {
-            SceneManager.LoadScene("");
+            SceneManager.LoadScene("TechLab");
         }
     }
 }

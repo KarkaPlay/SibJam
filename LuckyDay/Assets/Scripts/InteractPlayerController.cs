@@ -99,7 +99,7 @@ public class InteractPlayerController : MonoBehaviour
                 //spriteRenderer.sprite = directions[1]; // Down-Left
             }
         }
-
+        
         /*if (inputX > 0.0f && inputY < 0.0f)
             spriteRenderer.sprite = directions[2]; // Down-Right
         if (inputX < 0.0f && inputY < 0.0f)

@@ -28,4 +28,7 @@ EditorBuildSettings:
     path: "Assets/Scenes/\u0421\u0435\u0440\u0432\u0435\u0440\u043D\u0430\u044F/Servers
       room.unity"
     guid: b072385706701a647841052aab8f9d6a
+  - enabled: 1
+    path: "Assets/Scenes/\u0422\u0435\u0445\u041B\u0430\u0431/TechLab.unity"
+    guid: 3da20384fd8062641b3b8455fd5f5902
   m_configObjects: {}
