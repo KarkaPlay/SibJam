@@ -104,12 +104,6 @@ public class InteractPlayerController : MonoBehaviour
             nearestInteractive = other.gameObject;
             pressEToInteract.SetActive(true);
         }
-        if (other.gameObject.CompareTag("CanTalk"))
-        {
-            other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
-            nearestInteractive = other.gameObject;
-            pressEToInteract.SetActive(true);
-        }
     }
     
     private void OnTriggerExit2D(Collider2D other)
