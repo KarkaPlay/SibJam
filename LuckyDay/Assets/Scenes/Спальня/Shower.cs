@@ -8,20 +8,42 @@ public class Shower : MonoBehaviour
     public GameObject plita;
     private Color _spriteColor;
     public bool isShowering = false;
-    
+
+
+    public GameObject pressEToInteract;
+    private GameObject nearestInteractive;
+
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _spriteColor = _spriteRenderer.color;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Update()
     {
-        if  (other.gameObject.name == "Shower")
+        if (!Input.GetKeyDown(KeyCode.E)) return;
+        if (nearestInteractive != null)
+        {
             {
                 StartCoroutine(plita.GetComponent<PlitaInteraction>().BurnTimer());
                 Invisible();
             }
+
+        }
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Shower"))
+        {
+            nearestInteractive = other.gameObject;
+            pressEToInteract.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        pressEToInteract.SetActive(false);
+        nearestInteractive = null;
     }
     void Invisible()
     {

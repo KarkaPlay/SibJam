@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 3836520131595068015}
   - component: {fileID: 1511802559}
   - component: {fileID: 933472020139192266}
-  - component: {fileID: 7190393060941479914}
   - component: {fileID: 3173867644645524700}
+  - component: {fileID: 1984911266447686928}
+  - component: {fileID: 1024241425739819728}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -171,23 +172,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressEToInteract: {fileID: 0}
   animator: {fileID: 0}
---- !u!114 &7190393060941479914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6563471289637120285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3c8702b89c507409754e6f2e9b1de1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elevatorMenuUI: {fileID: 0}
-  choice1: {fileID: 0}
-  choice2: {fileID: 0}
-  choice3: {fileID: 0}
-  choice4: {fileID: 0}
 --- !u!95 &3173867644645524700
 Animator:
   serializedVersion: 3
@@ -207,3 +191,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1984911266447686928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563471289637120285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb49af981a38b514c88f03841eac9318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressEToInteract: {fileID: 0}
+--- !u!114 &1024241425739819728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563471289637120285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3c8702b89c507409754e6f2e9b1de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elevatorMenuUI: {fileID: 0}
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
+  choice3: {fileID: 0}
+  choice4: {fileID: 0}

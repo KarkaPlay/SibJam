@@ -14,6 +14,8 @@ public class Interaction : MonoBehaviour
         _spriteRenderer.sprite = turnedOff;
     }
 
+    
+
     public void Interact()
     {
         if (_spriteRenderer.sprite == turnedOff)
