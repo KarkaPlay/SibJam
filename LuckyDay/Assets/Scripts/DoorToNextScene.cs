@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using System.IO;
 
 public class DoorToNextScene : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class DoorToNextScene : MonoBehaviour
 
     public GameObject pressEToInteract;
     private GameObject nearestInteractive;
+
+
     private void Update()
     {
         if (!Input.GetKeyDown(KeyCode.E)) return;
@@ -36,4 +40,5 @@ public class DoorToNextScene : MonoBehaviour
         pressEToInteract.SetActive(false);
         nearestInteractive = null;
     }
+
 }
