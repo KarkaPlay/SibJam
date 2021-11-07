@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System;
-using System.IO;
 
 public class Elevator : MonoBehaviour
 {
@@ -17,21 +15,6 @@ public class Elevator : MonoBehaviour
     public GameObject choice2;
     public GameObject choice3;
     public GameObject choice4;
-
-    public int sceneid;
-    private Save sv = new Save();
-    private string path;
-
-    private void Start()
-    {
-        path = Path.Combine(Application.dataPath, "Save.json");//считывание
-        if (File.Exists(path))//проверка данных в файле
-        {
-            sv = JsonUtility.FromJson<Save>(File.ReadAllText(path));
-            Debug.Log("Well" + sv.sceneid);
-        }
-
-    }
 
     void ElevatorWindowOn()
     {
@@ -61,39 +44,21 @@ public class Elevator : MonoBehaviour
     }
     public void ChoiceOption1 ()
     {
-        sceneid = 4;
-        CheckData(sceneid);
         SceneManager.LoadScene("Warehouse");
     }
 
     public void ChoiceOption2()
     {
-        sceneid = 2;
-        CheckData(sceneid);
         SceneManager.LoadScene("Hall");
     }
 
     public void ChoiceOption3()
     {
-        sceneid = 5;
-        CheckData(sceneid);
         SceneManager.LoadScene("Corridor");
     }
     public void ChoiceOption4()
     {
-        sceneid = 3;
-        CheckData(sceneid);
         SceneManager.LoadScene("Boss room");
-    }
-    [Serializable]
-    public class Save
-    {
-        public int sceneid;
-    }
-    public void CheckData(int sceneid)//запись данных
-    {
-        sv.sceneid = sceneid;
-        Debug.Log("Well" + sv.sceneid);
     }
 }
 
