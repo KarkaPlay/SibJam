@@ -2571,48 +2571,48 @@ PrefabInstance:
     - target: {fileID: 933472020139192266, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 1917318161}
+      objectReference: {fileID: 1820178756}
     - target: {fileID: 933472020139192266, guid: bf48763dedd640c489d6416912706ec1, type: 3}
       propertyPath: pressEToInteract
       value: 
       objectReference: {fileID: 899270835}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: choice1
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: choice2
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: choice3
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: choice4
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: animator
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: dialogueStart
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: dialogueMenuUI
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: elevatorMenuUI
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    - target: {fileID: 0}
       propertyPath: pressEToInteract
       value: 
       objectReference: {fileID: 0}
@@ -2684,8 +2684,7 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4159898249587181304, guid: bf48763dedd640c489d6416912706ec1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf48763dedd640c489d6416912706ec1, type: 3}
 --- !u!114 &1012430876 stripped
 MonoBehaviour:
