@@ -12,10 +12,12 @@ GameObject:
   - component: {fileID: 3888854899449744406}
   - component: {fileID: 3888854899449744407}
   - component: {fileID: 3888854899449744404}
+  - component: {fileID: 8771816759695407532}
   - component: {fileID: 3888854899449744411}
+  - component: {fileID: 2217481741018389968}
   m_Layer: 0
   m_Name: "\u0411\u043E\u043B\u0442\u0430\u044E\u0449\u0430\u044F \u0447\u0435\u043B\u043B\u0435\u0441\u0430"
-  m_TagString: Untagged
+  m_TagString: CanTalk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,6 +132,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.625, y: 0.47095156}
   m_EdgeRadius: 0
+--- !u!114 &8771816759695407532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3888854899449744400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6d93aebae256e4fa985fc8b100359c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    lines:
+    - name: "\u0418\u0433\u0440\u043E\u043A"
+      text:
+      - "\u0425\u0430\u0439 \u0442\u044F\u043D \u0442\u044B \u043A\u0430\u0432\u0430\u0439\u043D\u0430\u044F
+        \u0433\u043E \u0447\u0438\u043B\u043B\u0438\u0442\u044C"
+    - name: "\u041A\u0430\u0432\u0430\u0439\u043D\u0430\u044F \u0442\u044F\u043D"
+      text:
+      - "\u043F\u0437\u0434\u0446 \u043A\u0440\u0438\u043D\u0436, \u0441\u044A\u0435\u0431\u0438
+        \u043F\u0436"
 --- !u!114 &3888854899449744411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,3 +168,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   height: 0
   bottomPoint: 0
+--- !u!61 &2217481741018389968
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3888854899449744400}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.038567066, y: -0.68318635}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.625, y: 1.8125}
+    newSize: {x: 0.625, y: 1.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2751293, y: 1.2395047}
+  m_EdgeRadius: 0
